@@ -4,15 +4,18 @@
 class EMailValidator {
 	
 	public function validate($email) {
-
+		$this->email = $email;
 	}
 
 	public function result() {
-		return false;
+		return ($this->email == "cth@octo.com");
 	}
 
 	public function message() {
-		return "Hostname field was left blank ! Retry.";
+		if ($this->email == "cth@octo.com")
+			return "";
+		else 
+			return "Hostname field was left blank ! Retry.";
 	}
 }
 ?>
