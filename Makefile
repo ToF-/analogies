@@ -9,3 +9,8 @@ ev: samples/EMailValidator.html samples/EMailValidation.php
 
 phpSample: samples/PhpSample.*
 	sudo cp samples/PhpSample.php /Library/WebServer/Documents/.
+
+samples: samples/*
+	sudo rm -Rf /Library/WebServer/Documents/samples
+	sudo cp -r samples /Library/WebServer/Documents/.
+
