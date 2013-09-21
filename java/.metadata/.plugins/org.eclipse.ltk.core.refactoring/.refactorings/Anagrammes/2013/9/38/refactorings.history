@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;string&apos; in &apos;Dictionnaire.anagrammes(...)&apos; to &apos;mot&apos;&#x0A;- Original project: &apos;Anagrammes&apos;&#x0A;- Original element: &apos;Dictionnaire.anagrammes(String).string&apos;&#x0A;- Renamed element: &apos;string&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;string&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Dictionnaire.java[Dictionnaire~anagrammes~QString;@string!139!151!146!151!QString;!0!true" name="mot" references="true" stamp="1379751433003" version="1.0"/>
+</session>

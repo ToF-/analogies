@@ -11,7 +11,7 @@ public class Dictionnaire {
 		return new ArrayList<String>();
 	}
 
-	public void ajoute(String mot) {
+	public void ajoute(String string) {
 		
 	}
 

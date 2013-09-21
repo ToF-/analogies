@@ -5,13 +5,13 @@ import java.util.List;
 
 public class Dictionnaire {
 
-	public List<String> anagrammes(String mot) {
-		if(mot.equals("NICHE"))
+	public List<String> anagrammes(String string) {
+		if(string.equals("NICHE"))
 			return Arrays.asList("CHIEN");
 		return new ArrayList<String>();
 	}
 
-	public void ajoute(String mot) {
+	public void ajoute(String string) {
 		
 	}
 
