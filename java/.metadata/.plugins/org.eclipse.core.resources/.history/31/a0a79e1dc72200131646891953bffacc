@@ -18,8 +18,4 @@ public class EntreeTest {
 		assertTrue(entree1.estAnagramme(entree2));
 	}
 
-	@Test
-	public void UneEntreeNEstPasAnagrammeDelleMeme() {
-		assertFalse(new Entree("CHAT").estAnagramme(new Entree("CHAT")));
-	}
 }
