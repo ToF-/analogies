@@ -12,6 +12,7 @@ public class Dictionnaire {
 	}
 
 	public void ajoute(String string) {
+		// TODO Auto-generated method stub
 		
 	}
 
