@@ -18,7 +18,11 @@ public class Entree {
 	}
 
 	public boolean estAnagramme(Entree entree) {
-		return (!this.mot().equals(entree.mot()) && this.clef().equals(entree.clef()));
+		return sontAnagrammes(this, entree);
+	}
+	
+	private boolean sontAnagrammes(Entree entree1, Entree entree2) {
+		return (!entree1.mot().equals(entree2.mot()) && entree1.clef().equals(entree2.clef()));
 	}
 
 	public String clef() {
