@@ -5,25 +5,17 @@ import java.util.List;
 
 public class Dictionnaire {
 
-	private String entree="";
+	private String entree;
 
 	public List<String> anagrammes(String mot) {
-		if(!entree.equals("") && estAnagramme(mot))
+		if(estAnagramme(mot))
 			return Arrays.asList(entree);
 		return new ArrayList<String>();
 	}
 
 	private boolean estAnagramme(String mot) {
 		return (clef(mot).equals(clef(entree)));
-		// return  (mot.equals("NICHE") && entree == "CHIEN" || mot.equals("ROUSSI") && entree == "SOURIS");
-	}
-
-	private String clef(String mot) {
-		if (mot.equals("CHIEN") || mot.equals("NICHE"))
-			return "CEHIN";
-		if (mot.equals("SOURIS") || mot.equals("ROUSSI"))
-			return "IORSU";
-		return "";
+		return  (mot.equals("NICHE") && entree == "CHIEN" || mot.equals("ROUSSI") && entree == "SOURIS");
 	}
 
 	public void ajoute(String mot) {

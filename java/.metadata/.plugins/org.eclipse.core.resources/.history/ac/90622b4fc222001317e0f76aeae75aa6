@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Dictionnaire {
 
-	private String entree="";
+	private String entree;
 
 	public List<String> anagrammes(String mot) {
 		if(!entree.equals("") && estAnagramme(mot))

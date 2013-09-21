@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Dictionnaire {
 
-	private String entree="";
+	private String entree;
 
 	public List<String> anagrammes(String mot) {
-		if(!entree.equals("") && estAnagramme(mot))
+		if(estAnagramme(mot))
 			return Arrays.asList(entree);
 		return new ArrayList<String>();
 	}
@@ -19,11 +19,7 @@ public class Dictionnaire {
 	}
 
 	private String clef(String mot) {
-		if (mot.equals("CHIEN") || mot.equals("NICHE"))
-			return "CEHIN";
-		if (mot.equals("SOURIS") || mot.equals("ROUSSI"))
-			return "IORSU";
-		return "";
+		return null;
 	}
 
 	public void ajoute(String mot) {
