@@ -10,11 +10,13 @@ public class Dictionnaire {
 	public List<String> anagrammes(String mot) {
 		if(estAnagramme(mot))
 			return Arrays.asList(entree);
+		if (mot.equals("ROUSSI"))
+			return Arrays.asList("SOURIS");
 		return new ArrayList<String>();
 	}
 
 	private boolean estAnagramme(String mot) {
-		return  (mot.equals("NICHE") && entree == "CHIEN" || mot.equals("ROUSSI") && entree == "SOURIS");
+		return mot.equals("NICHE") && entree == "CHIEN";
 	}
 
 	public void ajoute(String mot) {

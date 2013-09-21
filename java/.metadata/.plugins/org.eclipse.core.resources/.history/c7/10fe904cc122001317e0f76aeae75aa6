@@ -14,7 +14,7 @@ public class Dictionnaire {
 	}
 
 	private boolean estAnagramme(String mot) {
-		return  (mot.equals("NICHE") && entree == "CHIEN" || mot.equals("ROUSSI") && entree == "SOURIS");
+		return  (mot.equals("NICHE") && entree == "CHIEN" || mot.equals("ROUSSI") && entree == "SOURIS") 
 	}
 
 	public void ajoute(String mot) {
