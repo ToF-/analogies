@@ -1,0 +1,9 @@
+
+public class Dictionnaire {
+
+	public Object anagrammes(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

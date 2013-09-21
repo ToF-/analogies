@@ -7,8 +7,7 @@ public class DictionnaireTest {
 
 	@Test
 	public void test() {
-		Dictionnaire dictionnaire = new Dictionnaire();
-		assertTrue(dictionnaire.anagrammes("CHIEN").isEmpty());
+		fail("Not yet implemented");
 	}
 
 }
