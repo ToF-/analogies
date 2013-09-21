@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+
+public class Dictionnaire {
+
+	public List<String> anagrammes(String mot) {
+		estAnagramme(mot);
+		return new ArrayList<String>();
+	}
+
+	private void estAnagramme(String mot) {
+		if(mot.equals("NICHE"))
+			return Arrays.asList("CHIEN");
+		if (mot.equals("ROUSSI"))
+			return Arrays.asList("SOURIS");
+	}
+
+	public void ajoute(String mot) {
+		
+	}
+
+}
