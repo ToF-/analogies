@@ -10,12 +10,5 @@ public class EntreeTest {
 		Entree entree = new Entree("CHAT");
 		assertEquals("CHAT", entree.mot());
 	}
-	
-	@Test 
-	public void UneEntreePeutEtreAnagrammeDuneAutreEntree() {
-		Entree entree1 = new Entree("CHIEN");
-		Entree entree2 = new Entree("NICHE");
-		assertTrue(entree1.estAnagramme(entree2));
-	}
 
 }
