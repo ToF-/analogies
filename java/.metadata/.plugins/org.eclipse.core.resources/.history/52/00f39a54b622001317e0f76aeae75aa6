@@ -8,8 +8,6 @@ public class Dictionnaire {
 	public List<String> anagrammes(String mot) {
 		if(mot.equals("NICHE"))
 			return Arrays.asList("CHIEN");
-		if (mot.equals("ROUSSI"))
-			return Arrays.asList("SOURIS");
 		return new ArrayList<String>();
 	}
 

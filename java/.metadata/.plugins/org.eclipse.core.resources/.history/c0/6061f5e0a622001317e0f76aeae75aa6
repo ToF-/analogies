@@ -24,9 +24,12 @@ public class DictionnaireTest {
 	public void UnDictionnaireAvecUneEntreeAnagrammeConnaitSonAnagramme() {
 		dictionnaire.ajoute("CHIEN");
 		assertEquals(Arrays.asList("CHIEN"), dictionnaire.anagrammes("NICHE"));
-		dictionnaire.ajoute("SOURIS");
-		assertEquals(Arrays.asList("SOURIS"), dictionnaire.anagrammes("ROUSSI"));
 	}
-
+	
+	@Test
+	public void UnDictionnaireAvecUneSeuleEntreeNeConnaitQuUnAnagramme() {
+		dictionnaire.ajoute("CHIEN")
+		assertTrue(dictionnaire.anagrammes("SOURIS").isEmpty());
+	}
 
 }
