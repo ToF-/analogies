@@ -2,16 +2,14 @@ import static org.junit.Assert.*;
 
 import java.util.Arrays;
 
-import org.junit.Before;
 import org.junit.Test;
 
 
 public class DictionnaireTest {
 
 	private Dictionnaire dictionnaire;
-	
-	@Before
-	public void setup() {
+
+	public void setUp() {
 		dictionnaire = new Dictionnaire();
 	}
 	
@@ -22,7 +20,14 @@ public class DictionnaireTest {
 	
 	@Test
 	public void UnDictionnaireAvecUneEntreeAnagrammeConnaitSonAnagramme() {
+		Dictionnaire dictionnaire = new Dictionnaire();
 		dictionnaire.ajoute("CHIEN");
 		assertEquals(Arrays.asList("CHIEN"), dictionnaire.anagrammes("NICHE"));
 	}
+	
+	@Test
+	public void UnDictionnaireAvecUneEntreeNeConnaitQuUnAnagramme() {
+
+	}
+
 }

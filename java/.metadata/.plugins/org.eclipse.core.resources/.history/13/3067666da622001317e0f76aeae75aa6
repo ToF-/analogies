@@ -22,7 +22,14 @@ public class DictionnaireTest {
 	
 	@Test
 	public void UnDictionnaireAvecUneEntreeAnagrammeConnaitSonAnagramme() {
+		Dictionnaire dictionnaire = new Dictionnaire();
 		dictionnaire.ajoute("CHIEN");
 		assertEquals(Arrays.asList("CHIEN"), dictionnaire.anagrammes("NICHE"));
 	}
+	
+	@Test
+	public void UnDictionnaireAvecUneEntreeNeConnaitQuUnAnagramme() {
+
+	}
+
 }
