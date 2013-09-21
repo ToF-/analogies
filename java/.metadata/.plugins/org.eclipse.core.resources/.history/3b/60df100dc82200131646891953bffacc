@@ -10,7 +10,7 @@ public class Entree {
 		this.mot = mot;
 		char[] chars  = mot.toCharArray();
 		Arrays.sort(chars);
-		this.clef = new String(chars);
+		this.clef = String(chars);
 	}
 
 	public String mot() {
@@ -18,14 +18,14 @@ public class Entree {
 	}
 
 	public boolean estAnagramme(Entree entree) {
-		return sontAnagrammes(this, entree);
+		return sontAnagrammes(this.mot(), entree.mot());
 	}
 	
-	private boolean sontAnagrammes(Entree entree1, Entree entree2) {
-		return (!entree1.mot().equals(entree2.mot()) && entree1.clef().equals(entree2.clef()));
+	private boolean sontAnagrammes(String mot1, String mot2) {
+		return (!mot1.equals(mot2) && mot1.clef().equals(mot2.clef()));
 	}
 
-	public String clef() {
+	private String clef() {
 		return clef;
 	}
 }

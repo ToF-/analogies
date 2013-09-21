@@ -1,3 +1,5 @@
 1379751433003	Rename local variable 'string'
 1379769737384	Extract method 'estAnagramme'
 1379771125709	Rename field 'entree'
+1379772797205	Rename local variable 'mot1'
+1379772821013	Rename local variable 'mot2'

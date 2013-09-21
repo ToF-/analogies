@@ -1,0 +1,28 @@
+import java.util.Arrays;
+
+
+public class Entree {
+
+	private String mot;
+
+	public Entree(String mot) {
+		this.mot = mot;
+	}
+
+	public String mot() {
+		return mot;
+	}
+
+	public boolean estAnagramme(Entree entree) {
+		return sontAnagrammes(this.mot(), entree.mot());
+	}
+	private boolean sontAnagrammes(String mot1, String mot2) {
+		return (!mot1.equals(mot2) && clef(mot1).equals(clef(mot2)));
+	}
+
+	private String clef(String mot) {
+		char[] chars  = mot.toCharArray();
+		Arrays.sort(chars);
+		return new String(chars);
+	}
+}
