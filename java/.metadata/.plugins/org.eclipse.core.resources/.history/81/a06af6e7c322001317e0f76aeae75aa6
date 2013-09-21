@@ -28,13 +28,5 @@ public class DictionnaireTest {
 		assertEquals(Arrays.asList("SOURIS"), dictionnaire.anagrammes("ROUSSI"));
 	}
 
-	@Test
-	public void UnDictionnaireAvecPlusieursEntreesAnagrammesLesConnait() {
-		dictionnaire.ajoute("AMER");
-		dictionnaire.ajoute("MARE");
-		dictionnaire.ajoute("RAME");
-		dictionnaire.ajoute("CHAT");
-		assertEquals(Arrays.asList("AMER","MARE","RAME"), dictionnaire.anagrammes("ARME"));
-	}
 
 }
