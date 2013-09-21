@@ -31,7 +31,7 @@ public class Dictionnaire {
 	}
 
 	public void ajoute(String mot) {
-		entrees.add(new Entree(mot));
+		entrees.add(mot);
 	}
 
 }

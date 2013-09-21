@@ -14,7 +14,7 @@ public class Dictionnaire {
 		ArrayList<String> resultat = new ArrayList<String>();
 		for(int i=0; i<entrees.size(); i++) {
 			Entree entree = entrees.get(i);
-			if(estAnagramme(entree.mot(),mot))
+			if(estAnagramme(entree,mot))
 				resultat.add(entree.mot());
 		}
 		return resultat;
@@ -31,7 +31,7 @@ public class Dictionnaire {
 	}
 
 	public void ajoute(String mot) {
-		entrees.add(new Entree(mot));
+		entrees.add(mot);
 	}
 
 }
