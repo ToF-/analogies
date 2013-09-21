@@ -11,14 +11,23 @@ public class Dictionnaire {
 		entrees = new ArrayList<Entree>();
 	}
 	public List<String> anagrammes(String mot) {
-		Entree autre = new Entree(mot);
 		ArrayList<String> resultat = new ArrayList<String>();
 		for(int i=0; i<entrees.size(); i++) {
 			Entree entree = entrees.get(i);
-			if(entree.estAnagramme(autre))
+			if(estAnagramme(entree.mot(),mot))
 				resultat.add(entree.mot());
 		}
 		return resultat;
+	}
+
+	private boolean estAnagramme(String mot1, String mot2) {
+		return (clef(mot1).equals(clef(mot2)));
+	}
+
+	private String clef(String mot) {
+		char[] chars  = mot.toCharArray();
+		Arrays.sort(chars);
+		return new String(chars);
 	}
 
 	public void ajoute(String mot) {
