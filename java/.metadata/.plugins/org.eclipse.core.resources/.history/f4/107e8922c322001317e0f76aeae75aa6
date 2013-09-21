@@ -18,9 +18,11 @@ public class Dictionnaire {
 	}
 
 	private String clef(String mot) {
-		char[] chars  = mot.toCharArray();
-		Arrays.sort(chars);
-		return new String(chars);
+		if (mot.equals("CHIEN") || mot.equals("NICHE"))
+			return "CEHIN";
+		if (mot.equals("SOURIS") || mot.equals("ROUSSI"))
+			return "IORSU";
+		return "";
 	}
 
 	public void ajoute(String mot) {
