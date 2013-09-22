@@ -10,9 +10,6 @@ public class Entree {
 	public String clef() { return clef; }
 
 	public Entree(String mot) {
-		calculeClef(mot);
-	}
-	private void calculeClef(String mot) {
 		this.mot = mot;
 		char[] chars  = mot.toCharArray();
 		Arrays.sort(chars);

@@ -3,3 +3,4 @@
 1379771125709	Rename field 'entree'
 1379772797205	Rename local variable 'mot1'
 1379772821013	Rename local variable 'mot2'
+1379838592000	Extract method 'calculeClef'
