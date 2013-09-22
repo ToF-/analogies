@@ -24,7 +24,7 @@ public class Dictionnaire {
 		entrees.add(new Entree(mot));
 	}
 	public boolean contient(String string) {
-		return true;
+		return false;
 	}
 
 }

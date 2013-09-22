@@ -36,11 +36,5 @@ public class DictionnaireTest {
 		dictionnaire.ajoute("CHAT");
 		assertEquals(Arrays.asList("AMER","MARE","RAME"), dictionnaire.anagrammes("ARME"));
 	}
-	
-	@Test
-	public void UnDictionnaireContientLesMotsQuiLuiSontAjoutes() {
-		dictionnaire.ajoute("HIBOU");
-		assertTrue(dictionnaire.contient("HIBOU"));
-	}
 
 }

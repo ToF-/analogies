@@ -16,6 +16,7 @@ public class Entree {
 		this.clef = new String(chars);
 	}
 
+
 	public boolean estAnagramme(Entree entree) {
 		return (!this.mot().equals(entree.mot()) && this.clef().equals(entree.clef()));
 	}
