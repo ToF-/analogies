@@ -23,12 +23,9 @@ public class Dictionnaire {
 	public void ajoute(String mot) {
 		entrees.add(new Entree(mot));
 	}
-	public boolean contient(String mot) {
-		for(int i=0; i<entrees.size(); i++) {
-			if(entrees.get(i).mot().equals(mot))
-				return true;
-		}
-		return false;
+	public boolean contient(String string) {
+		entrees.contains(string);
+		return true;
 	}
 
 }

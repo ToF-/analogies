@@ -167,3 +167,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2013-09-22 09:49:57.312
 !MESSAGE TODO: implement ConvertingState's union efficently
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2013-09-22 09:57:04.917
+!MESSAGE TODO: implement ConvertingState's union efficently

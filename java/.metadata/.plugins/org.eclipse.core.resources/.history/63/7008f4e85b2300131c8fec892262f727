@@ -41,9 +41,6 @@ public class DictionnaireTest {
 	public void UnDictionnaireContientLesMotsQuiLuiSontAjoutes() {
 		dictionnaire.ajoute("HIBOU");
 		assertTrue(dictionnaire.contient("HIBOU"));
-		assertFalse(dictionnaire.contient("RENARD"));
-		dictionnaire.ajoute("CHIEN");
-		assertTrue(dictionnaire.contient("CHIEN"));
 	}
 
 }
