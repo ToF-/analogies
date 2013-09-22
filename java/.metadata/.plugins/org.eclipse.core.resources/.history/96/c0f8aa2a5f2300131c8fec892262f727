@@ -6,11 +6,11 @@ import java.util.List;
 public class Dictionnaire {
 
 	private ArrayList<Entree> entrees;
-	private HashMap<String,ArrayList<String>> anagrammes;
+	private HashMap<String,String> anagrammes;
 
 	public Dictionnaire() {
 		entrees = new ArrayList<Entree>();
-		anagrammes = new HashMap<String,ArrayList<String>>();
+		anagrammes = new HashMap<String,String>();
 	}
 	public List<String> anagrammes(String mot) {
 		Entree autre = new Entree(mot);
@@ -29,22 +29,14 @@ public class Dictionnaire {
 		Entree entree = new Entree(mot);
 		entrees.add(entree);
 		String clef = entree.clef();
-		ArrayList<String> mots = anagrammes.get(clef);
-		if(mots == null) {
-			anagrammes.put(clef,new ArrayList<String>());
-			mots = anagrammes.get(clef);
-		}
-		mots.add(mot);
+		anagrammes.get(clef).add(mot);
+		
 	}
 	public boolean contient(String mot) {
-		Entree entree = new Entree(mot);
-		String clef = entree.clef();
-		ArrayList<String> mots = anagrammes.get(clef);
-		if (mots != null)
-			for(int i=0; i<mots.size(); i++) {
-				if(mots.get(i).equals(mot))
-					return true;
-			}
+		for(int i=0; i<entrees.size(); i++) {
+			if(entrees.get(i).mot().equals(mot))
+				return true;
+		}
 		return false;
 	}
 
