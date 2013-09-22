@@ -12,17 +12,14 @@ public class Dictionnaire {
 		entrees = new ArrayList<Entree>();
 		anagrammes = new HashMap<String,ArrayList<String>>();
 	}
-	public List<String> anagrammes(String recherche) {
-		Entree autre = new Entree(recherche);
-		String clef = autre.clef();
+	public List<String> anagrammes(String mot) {
+		Entree autre = new Entree(mot);
 		ArrayList<String> resultat = new ArrayList<String>();
-		ArrayList<String> mots = anagrammes.get(clef);
-		if(mots!=null)
-			for(int i=0; i<mots.size(); i++) {
-				String mot = mots.get(i);
-				if (!mot.equals(recherche))
-					resultat.add(mot);
-			}
+		for(int i=0; i<entrees.size(); i++) {
+			Entree entree = entrees.get(i);
+			if(entree.estAnagramme(autre))
+				resultat.add(entree.mot());
+		}
 		return resultat;
 	}
 

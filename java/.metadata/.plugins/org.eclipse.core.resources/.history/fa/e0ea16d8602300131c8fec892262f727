@@ -15,14 +15,13 @@ public class Dictionnaire {
 	public List<String> anagrammes(String recherche) {
 		Entree autre = new Entree(recherche);
 		String clef = autre.clef();
-		ArrayList<String> resultat = new ArrayList<String>();
 		ArrayList<String> mots = anagrammes.get(clef);
-		if(mots!=null)
-			for(int i=0; i<mots.size(); i++) {
-				String mot = mots.get(i);
-				if (!mot.equals(recherche))
-					resultat.add(mot);
-			}
+		ArrayList<String> resultat = new ArrayList<String>();
+		for(int i=0; i<mots.size(); i++) {
+			String mot = mots.get(i);
+			if (!mot.equals(recherche))
+				resultat.add(mot);
+		}
 		return resultat;
 	}
 
