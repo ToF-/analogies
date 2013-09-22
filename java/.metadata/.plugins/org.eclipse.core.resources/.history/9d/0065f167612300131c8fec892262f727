@@ -10,13 +10,13 @@ public class Entree {
 	public String clef() { return clef; }
 
 	public Entree(String mot) {
-		this.mot = mot;
-		this.clef = calculeClef(mot);
+		calculeClef(mot);
 	}
-	private String calculeClef(String mot) {
+	private void calculeClef(String mot) {
+		this.mot = mot;
 		char[] chars  = mot.toCharArray();
 		Arrays.sort(chars);
-		return new String(chars);
+		this.clef = new String(chars);
 	}
 
 	public boolean estAnagramme(Entree entree) {
