@@ -6,10 +6,11 @@ import java.util.List;
 
 public class Dictionnaire {
 
+	private ArrayList<Entree> entrees;
 	private HashMap<String,ArrayList<String>> anagrammes;
 
 	public Dictionnaire() {
-		new ArrayList<Entree>();
+		entrees = new ArrayList<Entree>();
 		anagrammes = new HashMap<String,ArrayList<String>>();
 	}
 	
