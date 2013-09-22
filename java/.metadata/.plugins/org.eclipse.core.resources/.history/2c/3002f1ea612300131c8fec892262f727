@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -13,15 +12,9 @@ public class Dictionnaire {
 		entrees = new ArrayList<Entree>();
 		anagrammes = new HashMap<String,ArrayList<String>>();
 	}
-	
-	private String calculeClef(String mot) {
-		char[] chars  = mot.toCharArray();
-		Arrays.sort(chars);
-		return new String(chars);
-	}
-	
 	public List<String> anagrammes(String recherche) {
-		String clef = calculeClef(recherche);
+		Entree autre = new Entree(recherche);
+		String clef = autre.clef();
 		ArrayList<String> resultat = new ArrayList<String>();
 		ArrayList<String> mots = anagrammes.get(clef);
 		if(mots!=null)

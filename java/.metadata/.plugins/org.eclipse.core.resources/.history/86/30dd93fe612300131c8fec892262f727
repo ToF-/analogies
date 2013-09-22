@@ -21,7 +21,8 @@ public class Dictionnaire {
 	}
 	
 	public List<String> anagrammes(String recherche) {
-		String clef = calculeClef(recherche);
+		Entree autre = new Entree(recherche);
+		String clef = autre.clef();
 		ArrayList<String> resultat = new ArrayList<String>();
 		ArrayList<String> mots = anagrammes.get(clef);
 		if(mots!=null)
