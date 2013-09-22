@@ -45,12 +45,5 @@ public class DictionnaireTest {
 		dictionnaire.ajoute("CHIEN");
 		assertTrue(dictionnaire.contient("CHIEN"));
 	}
-	
-	@Test
-	public void UnDictionnaireNeContientPasDeuxFoisLeMemeMot() {
-		dictionnaire.ajoute("CHIEN");
-		dictionnaire.ajoute("CHIEN");
-		assertEquals(Arrays.asList("CHIEN"), dictionnaire.anagrammes("NICHE"));
-	}
 
 }

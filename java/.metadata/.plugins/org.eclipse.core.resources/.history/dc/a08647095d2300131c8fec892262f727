@@ -21,11 +21,7 @@ public class Dictionnaire {
 	}
 
 	public void ajoute(String mot) {
-		if(!contient(mot)) { 
-			Entree entree = new Entree(mot);
-			entrees.add(entree);
-		}
-		
+		entrees.add(new Entree(mot));
 	}
 	public boolean contient(String mot) {
 		for(int i=0; i<entrees.size(); i++) {
